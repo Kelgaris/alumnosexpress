@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Servidor Express</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <div class="botones">
+        <button id="filtrarUno">Filtrar Uno</button>
+        <button id="filtrarTodos">Filtrar Todos</button>
+        <button id="mostrar">Formulario</button>
+    </div>
+    <div id="filtro">
+        <input type="text" name="id" id="id" placeholder="Inserte el ID a filtrar:"><button id="filtrar">Filtrar</button>
+    </div>
+   
+    <form id="formulario" action="">
+        <fieldset>
+            <h2>Añadir Usuario</h2>
+            <input type="text" name="nombre" id="nombre" placeholder="Inserte su nombre: ">
+            <input type="text" name="apellido" id="apellido" placeholder="Inserte el Primer Apellido: ">
+            <input type="tel" name="telefono" id="telefono" placeholder="Inserte el telefono: ">
+            <button id="añadirUsuario">Añadir</button>
+        </fieldset>
+    </form>
+    <div class="contenedorUsuarios"></div>
+    <script src="main.js"></script>
+</body>
+</html>
