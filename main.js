@@ -54,7 +54,7 @@ $(document).ready(function () {
         if (userId) {
             $('.contenedorUsuarios .carta').remove();
             $.ajax({
-                url: API_URL_USER + userId,
+                url: API_URL_USER +"/" + userId,
                 method: 'GET',
                 success: function (user) {
                     addCard(user);
