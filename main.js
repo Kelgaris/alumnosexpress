@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    const API_URL_USER1 = 'http://localhost:5000/users/user1/';
-    const API_URL_ALL_USERS = 'http://localhost:5000/users/';
-    const API_URL_USER = 'http://localhost:5000/users/';
+    const API_URL_USER1 = 'https://serverexpress-beryl.vercel.app/api/users/user1/';
+    const API_URL_ALL_USERS = 'https://serverexpress-beryl.vercel.app/api/users';
+    const API_URL_USER = 'https://serverexpress-beryl.vercel.app/api/users';
 
     // Función para añadir tarjetas
     function addCard(user, id = '') {
